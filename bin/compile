@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+$stdout.sync = true
+
+def indent(msg)
+  puts "       #{msg}"
+end
+
+BUILD_DIR=ARGV[0]
+ENV_DIR=ARGV[2]
+BUILDPACK_DIR=Dir.pwd
+
+puts "-----> Found an database.example.yml"
+
+`cp #{BUILD_DIR}/config/database.example.yml #{BUILD_DIR}/config/database.yml`
+
+indent "Done!"
