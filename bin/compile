@@ -14,6 +14,6 @@ puts "-----> Found an database.example.yml"
 indent "cp #{BUILD_DIR}/config/database.example.yml #{BUILD_DIR}/config/database.yml"
 `cp #{BUILD_DIR}/config/database.example.yml #{BUILD_DIR}/config/database.yml`
 
-indent get_file_as_string("#{BUILD_DIR}/config/database.example.yml")
+indent File.read("#{BUILD_DIR}/config/database.example.yml")
 
 indent "Done!"
