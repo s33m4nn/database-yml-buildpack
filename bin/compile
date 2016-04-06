@@ -13,5 +13,6 @@ puts "-----> Found an database.example.yml"
 
 indent "cp #{BUILD_DIR}/config/database.example.yml #{BUILD_DIR}/config/database.yml"
 `cp #{BUILD_DIR}/config/database.example.yml #{BUILD_DIR}/config/database.yml`
+`cat #{BUILD_DIR}/config/database.example.yml`
 
 indent "Done!"
