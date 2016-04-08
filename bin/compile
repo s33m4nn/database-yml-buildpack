@@ -9,7 +9,7 @@ BUILD_DIR=ARGV[0]
 ENV_DIR=ARGV[2]
 BUILDPACK_DIR=Dir.pwd
 
-puts "-----> Found an database.example.yml"
+puts "-----> Found a database.example.yml"
 
 indent "cp #{BUILD_DIR}/config/database.example.yml #{BUILD_DIR}/config/database.yml"
 `cp #{BUILD_DIR}/config/database.example.yml #{BUILD_DIR}/config/database.yml`
